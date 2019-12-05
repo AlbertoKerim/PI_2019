@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vjezba</title>
+    <link rel="stylesheet" type="text/css" href="izgled.css">
+</head>
+
+<body>
+
+<form action="forms.php" method="get">
+    <fieldset>
+        <legend><h2>Podaci</h2></legend>
+
+        <label for="ime">Ime:</label>
+        <input id="ime" type="text" name="ime" placeholder="Alberto">
+
+        <br><br>
+
+        <label for="prezime">Prezime:</label>
+        <input id="prezime" type="text" name="prezime" placeholder="Kerim">
+
+        <br><br>
+
+        <label>God. rodjenja</label>
+        <input type="date" name="godRod">
+
+        <br><br>
+
+        <label>Zavrsena skola:</label>
+        <input type="radio" name="sk" value="Gimnazija" checked>Gimnazija
+        <input type="radio" name="sk" value="Strukovna">Strukovna
+
+        <br><br>
+
+        <label>Spol:</label>
+        <input type="radio" name="spol" value="musko" checked>Musko
+        <input type="radio" name="spol" value="zensko">Zensko
+
+        <br><br>
+
+        <label for="adresa">Adresa:</label>
+        <input id="adresa" type="text" name="adresa" maxlength="90" placeholder="Adresa i pos. broj">
+
+        <br><br>
+
+        <label for="grad">Grad:</label>
+        <select name="grad" id="grad">
+            <option value="Zagreb" selected> Zagreb</option>
+            <option value="Split"> Split</option>
+            <option value="Rijeka"> Rijeka</option>
+            <option value="Maribor"> Maribor</option>
+            <option value="Spickovina"> Spickoivina</option>
+        </select>
+
+
+        <br><br>
+
+        <label for="hobiji">Koje predmete volite:</label>
+        <select name="hobiji[]" id="hobiji" multiple size="4">
+            <option value="programiranje" selected>Programiranje</option>
+            <option value="maketarstvo">Maketarstvo</option>
+            <option value="spavanje">Spavanje</option>
+            <option value="igrice">Igrice</option>
+            <option value="pc">PC</option>
+        </select>
+
+        <br><br>
+
+        <label>Napomena:</label>
+        <textarea rows="4" cols="50" name="napomena"></textarea>
+
+        <br><br>
+
+        <button type="submit" name="salji"> PODNESI </button>
+
+    </fieldset>
+</form>
+
+</body>
+
+</html>

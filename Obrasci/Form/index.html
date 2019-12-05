@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Vjezba</title>
+        <link rel="stylesheet" type="text/css" href="izgled.css">
+    </head>
+
+    <body>
+      <form action="forms.php" method="get">
+        <fieldset>
+            <legend><h2>Podaci</h2></legend>
+
+            <label for="ime">Ime:</label>
+            <input id="ime" type="text" name="ime">
+
+            <br><br>
+
+            <label for="prezime">Prezime:</label>
+            <input id="prezime" type="text" name="prezime">
+
+            <br><br>
+
+            <label>Idete li u skolu? </label>
+            <input type="radio" name="sk" value="DA" checked>Da
+            <input type="radio" name="sk" value="NE">Ne
+
+            <br><br>
+
+            <label for="oib">OIB:</label>
+            <input id="oib" type="password" name="oib" maxlength="50" size="30" />
+
+            <br><br>
+
+            <label for="predmeti">Koje predmete volite:</label>
+            <select name="predmeti[]" id="predmeti" multiple size="4">
+                <option value="Hrvatski" selected>Hrvatski</option>
+                <option value="Matematika">Matematika</option>
+                <option value="Engleski">Engleski</option>
+                <option value="Fizika">Fizika</option>
+                <option value="Informatika">Informatika</option>
+            </select>
+
+            <br><br>
+
+            <label for="boja">Koju boju volis:</label>
+            <select name="boja" id="boja">
+                <option value="Crvena" selected> Crvena</option>
+                <option value="Zelena"> Zelena</option>
+                <option value="Plava"> Plava</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit" name="salji"> PODNESI </button>
+
+        </fieldset>
+
+      </form>
+
+    </body>
+
+</html>

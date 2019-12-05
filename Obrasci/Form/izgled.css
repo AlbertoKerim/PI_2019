@@ -1,0 +1,66 @@
+html
+{
+    
+    background: #7b7775;
+}
+
+body
+{
+    font-size:12px;
+    font-family: Verdana, Arial, sans-serif;
+    color:#484645;
+    margin:0;
+    line-height:1.6;
+}
+
+h2
+{
+    color: #000000;
+}
+
+form
+{
+  margin-left:20%;
+}
+
+fieldset
+{
+    width:70%;
+    margin-bottom:15px;
+    background-color:#f0f0f0;
+}
+
+fieldset legend
+{
+    color: #c30f10;
+    font-weight:bold;
+}
+
+label
+{
+    display:inline-block;
+    width:30%;
+}
+
+input[type=radio] + label
+{
+    width:auto;
+}
+
+select, input[type=text], textarea
+{
+    box-sizing: border-box;
+    width:60%;
+    margin-bottom: 5px;
+}
+
+button
+{
+    background-color: green;
+    color:white;
+    font-weight:bold;
+    border:none;
+    padding:10px 30px;
+    border-radius:9px;
+    
+}
